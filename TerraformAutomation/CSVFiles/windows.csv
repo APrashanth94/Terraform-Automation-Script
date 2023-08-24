@@ -1,0 +1,5 @@
+resourcegroup,location,virtualMachineName,virtualMachineSize,virtualNetworkName,vnetAddressPrefixes,subnetName,snetAddressPrefixes,nsgName,nsg_rules,os_type,osImagePublisher,osOffer,osSKU,oSVersion,adminUsername,adminPassword,osDiskName,osDiskType,nicName,privateIPAllocationMethod,privateIPv4Address
+CUR-TEST-SYSLOG-EA-RG-W1,eastus,AZWE-SYS-w,Standard_DS2_v2,CUR-TEST-SYSLOG-WE-VNET-1,10.0.0.0/16,CUR-TEST-SYSLOG-WE-SNET-1,10.0.1.0/24,CUR-TEST-SYSLOG-WE-NSG-1,"[
+    {""rdpRuleName"": ""CUR-TEST-AllowBastionRDP-WE-NSG-TEST-1"", ""priority"": 300, ""access"": ""Allow"", ""protocol"": ""*"", ""sourcePortRange"": ""*"", ""destinationPortRange"": ""3389"", ""sourceAddressPrefix"": ""*"", ""destinationAddressPrefix"": ""*""},
+    {""rdpRuleName"": ""CUR-TEST-NSG-TEST-2"", ""priority"": 200, ""access"": ""Allow"", ""protocol"": ""*"", ""sourcePortRange"": ""*"", ""destinationPortRange"": ""22"", ""sourceAddressPrefix"": ""*"", ""destinationAddressPrefix"": ""*""}
+]",Windows,MicrosoftWindowsServer,WindowsServer,2019-Datacenter,latest,CUR-Admin,MyP@ssw0rd,CUR-TEST-SYSLOG-WE-OSDISK-1,Standard_LRS,CUR-TEST-SYSLOG-WE-NIC-1,Dynamic,

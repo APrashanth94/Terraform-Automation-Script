@@ -1,0 +1,5 @@
+resourcegroup,location,virtualMachineName,virtualMachineSize,virtualNetworkName,vnetAddressPrefixes,subnetName,snetAddressPrefixes,nsgName,nsg_rules,os_type,osImagePublisher,osOffer,osSKU,oSVersion,adminUsername,adminPassword,osDiskName,osDiskType,nicName,privateIPAllocationMethod,privateIPv4Address
+CUR-TEST-SYSLOG-WE-RG-TEST1,westeurope,AZWE-SYSLOG-TEST-890,Standard_B2ms,CUR-TEST-SYSLOG-WE-VNET-TEST-109,10.0.0.0/20,CUR-TEST-SYSLOG-WE-SNET-TEST-1,10.0.3.0/28,CUR-TEST-SYSLOG-WE-NSG-TEST-8,"[
+    {""rdpRuleName"": ""CUR-TEST-AllowBastionRDP-WE-NSG-TEST-1"", ""priority"": 300, ""access"": ""Allow"", ""protocol"": ""*"", ""sourcePortRange"": ""*"", ""destinationPortRange"": ""3389"", ""sourceAddressPrefix"": ""*"", ""destinationAddressPrefix"": ""*""},
+    {""rdpRuleName"": ""CUR-TEST-NSG-TEST-2"", ""priority"": 200, ""access"": ""Allow"", ""protocol"": ""*"", ""sourcePortRange"": ""*"", ""destinationPortRange"": ""22"", ""sourceAddressPrefix"": ""*"", ""destinationAddressPrefix"": ""*""}
+]",Linux,RedHat,RHEL,9_2,latest,rootadmin,,CUR-TEST-SYSLOG-WE-OSDISK-TEST-9,Standard_LRS,CUR-TEST-SYSLOG-WE-NIC-TEST-9,Dynamic,
